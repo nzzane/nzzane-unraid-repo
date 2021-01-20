@@ -38,7 +38,9 @@
   <DonateLink>https://www.paypal.com/donate?hosted_button_id=4CL2REKSGRLWA</DonateLink>
   <Description>
     Pi-Hole - let's block those pesky ads! Now with DNS-over-HTTPS and DNS-over-TLS! pihole.doh!&#xD;
-    Don't send your DNS queries in plain text.&#xD;
+    Don't send your DNS queries in plain text.&#xD; 
+    &#xD;
+    Thanks to Testdasi for original Repo
     &#xD;
     YOU MUST ASSIGN A STATIC IP TO THE DOCKER FOR PIHOLE TO WORK.
     &#xD;
