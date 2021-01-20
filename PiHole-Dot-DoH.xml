@@ -7,7 +7,7 @@
   <MyIP>192.168.1.24</MyIP>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
-  <Support>https://forums.unraid.net/topic/96233-support-testdasi-repo/</Support>
+  <Support>https://forums.unraid.net/topic/101615-support-nzzane-pihole-dot-doh/</Support>
   <Project>https://docs.pi-hole.net/guides/dns-over-https/</Project>
   <Overview>
     Pi-Hole - let's block those pesky ads! Now with DNS-over-HTTPS and DNS-over-TLS! pihole.doh!&#xD;
@@ -28,8 +28,8 @@
   </Overview>
   <Category>Security: Other: Network:DNS Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:80]/admin</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/testdasi/testdasi-unraid-repo/master/pihole-dot-doh.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/testdasi/pihole-base-buster-plus/master/pi_hole_bw.png</Icon>
+  <TemplateURL>https://raw.githubusercontent.com/nzzane/nzzane-unraid-repo/main/PiHole-Dot-DoH.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/nzzane/pihole-base-buster-plus/master/pi_hole_bw.png</Icon>
   <ExtraParams>--cap-add=NET_ADMIN --restart=unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
