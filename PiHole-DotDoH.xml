@@ -2,7 +2,7 @@
 <Container version="2">
   <Name>Pihole-DoT-DoH</Name>
   <Repository>nzzane/pihole-dot-doh:stable-amd64</Repository>
-  <Registry>https://hub.docker.com/r/nzzane/pihole-dot-doh/</Registry>
+  <Registry>https://hub.docker.com/r/flippinturt/pihole-dot-doh/</Registry>
   <Network>br0</Network>
   <MyIP>192.168.1.24</MyIP>
   <Shell>bash</Shell>
