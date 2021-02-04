@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>youtransfer</Name>
+  <Repository>flippinturt/youtransfer</Repository>
+  <Registry>https://hub.docker.com/r/flippinturt/youtransfer/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/flippinturt/youtransfer/</Support>
+  <Project>https://github.com/YouTransfer/YouTransfer</Project>
+  <Overview>YouTransfer is a simple but elegant self-hosted file transfer &amp;amp; sharing solution. It is an alternative to paid services like Dropbox and WeTransfer by offering similar features but without limitations, price plans and a lengthy privacy policy. You remain in control of your files.&#xD;
+&#xD;
+Created to be installed behind the firewall on private servers, YouTransfer aims to empower organisations and individuals that wish to combine easy-to-use file transfer tooling with security and control.</Overview>
+  <Category>Cloud: Tools:</Category>
+  <WebUI>5000</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/nzzane/nzzane-unraid-repo/main/Icons/youtransfer.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1612412577</DateInstalled>
+  <DonateText>If you like my work, a donation to my snack fund is very much appreciated.</DonateText>
+  <DonateLink>https://www.paypal.com/donate?hosted_button_id=4CL2REKSGRLWA</DonateLink>
+  <Description>YouTransfer is a simple but elegant self-hosted file transfer &amp;amp; sharing solution. It is an alternative to paid services like Dropbox and WeTransfer by offering similar features but without limitations, price plans and a lengthy privacy policy. You remain in control of your files.&#xD;
+&#xD;
+Created to be installed behind the firewall on private servers, YouTransfer aims to empower organisations and individuals that wish to combine easy-to-use file transfer tooling with security and control.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>5000</HostPort>
+        <ContainerPort>5000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/youtransfer/</HostDir>
+      <ContainerDir>/opt/youtransfer/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/opt/youtransfer/uploads</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="Port" Target="5000" Default="" Mode="tcp" Description="WebUI Port" Type="Port" Display="always" Required="false" Mask="false">5000</Config>
+  <Config Name="Config" Target="/opt/youtransfer/config" Default="" Mode="rw" Description="Config Path" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/youtransfer/</Config>
+  <Config Name="Host Path 3" Target="/opt/youtransfer/uploads" Default="" Mode="rw" Description="Uploads Path" Type="Path" Display="always" Required="false" Mask="false"></Config>
+</Container>
