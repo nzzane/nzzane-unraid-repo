@@ -42,6 +42,9 @@ A publicly available version can be found at hastebin.com</Description>
       <HostDir>/mnt/user/appdata/hastebin/</HostDir>
       <ContainerDir>/app/data</ContainerDir>
       <Mode>rw</Mode>
+      <HostDir>/mnt/user/appdata/hastebin/app</HostDir>
+      <ContainerDir>/usr/src/app</ContainerDir>
+      <Mode>rw</Mode>
     </Volume>
   </Data>
   <Environment/>
