@@ -32,7 +32,7 @@ A publicly available version can be found at hastebin.com</Description>
     <Publish>
       <Port>
         <HostPort>7777</HostPort>
-        <ContainerPort>80</ContainerPort>
+        <ContainerPort>7777</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
     </Publish>
