@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>PiAlert</Name>
+  <Repository>jokobsk/pi.alert</Repository>
+  <Registry>https://registry.hub.docker.com/r/jokobsk/pi.alert</Registry>
+  <Network>br0</Network>
+  <MyIP></MyIP>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/jokob-sk/Pi.Alert/issues</Support>
+  <Project>https://github.com/jokob-sk/Pi.Alert</Project>
+  <Overview>The system continuously scans the network for New devices, New connections (re-connections), Disconnections, "Always Connected" devices down, Devices IP changes and Internet IP address changes. Scanning methods are:&#xD;
+&#xD;
+    Method 1: arp-scan. The arp-scan system utility is used to search for devices on the network using arp frames.&#xD;
+    Method 2: Pi-hole. This method is optional and complementary to method 1. If the Pi-hole DNS server is active, Pi.Alert examines its activity looking for active devices using DNS that have not been detected by method 1.&#xD;
+    Method 3. dnsmasq. This method is optional and complementary to the previous methods. If the DHCP server dnsmasq is active, Pi.Alert examines the DHCP leases (addresses assigned) to find active devices that were not discovered by the other methods.&#xD;
+</Overview>
+  <Category>Security: Tools: Network:Management</Category>
+  <WebUI>http://[IP]:[PORT:20211]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/pucherot/Pi.Alert/main/front/img/pialertLogoGray50.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1672899954</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Config path" Target="/home/pi/pialert/config" Default="" Mode="rw" Description="Path to Config location" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pialert/config</Config>
+  <Config Name="Host Key 1" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">Pacific/Auckland</Config>
+  <Config Name="Web Port" Target="20211" Default="20211" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">20211</Config>
+  <Config Name="Database path" Target="/home/pi/pialert/db" Default="" Mode="rw" Description="Path to Database location" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pialert/db</Config>
+  <Config Name="PiHole FTL db path" Target="/etc/pihole/pihole-FTL.db" Default="/mnt/user/appdata/pihole-dot-doh/pihole/pihole-FTL.db" Mode="rw" Description="Optional: Path to PiHole FTL DB" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/pihole-dot-doh/pihole/pihole-FTL.db</Config>
+</Container>
