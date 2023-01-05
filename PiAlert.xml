@@ -18,7 +18,7 @@
 </Overview>
   <Category>Security: Tools: Network:Management</Category>
   <WebUI>http://[IP]:[PORT:20211]</WebUI>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/nzzane/nzzane-unraid-repo/main/PiHole-Dot-DoH.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/pucherot/Pi.Alert/main/front/img/pialertLogoGray50.png</Icon>
   <ExtraParams/>
   <PostArgs/>
