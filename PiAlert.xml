@@ -3,8 +3,8 @@
   <Name>PiAlert</Name>
   <Repository>jokobsk/pi.alert</Repository>
   <Registry>https://registry.hub.docker.com/r/jokobsk/pi.alert</Registry>
-  <Network>br0</Network>
-  <MyIP></MyIP>
+  <Network>bridge</Network>
+  <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
   <Support>https://github.com/jokob-sk/Pi.Alert/issues</Support>
