@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
-<Container version="2">
-  <Name>PiAlert</Name>
-  <Repository>jokobsk/pi.alert</Repository>
-  <Registry>https://registry.hub.docker.com/r/jokobsk/pi.alert</Registry>
+<Container version="3">
+  <Name>NetAlertX</Name>
+  <Repository>jokobsk/netalertx</Repository>
+  <Registry>https://registry.hub.docker.com/r/jokobsk/netalertx</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
-  <Support>https://github.com/jokob-sk/Pi.Alert/issues</Support>
-  <Project>https://github.com/jokob-sk/Pi.Alert</Project>
+  <Support>https://github.com/jokob-sk/NetAlertX/issues</Support>
+  <Project>https://github.com/jokob-sk/NetAlertX</Project>
   <Overview>The system continuously scans the network for New devices, New connections (re-connections), Disconnections, "Always Connected" devices down, Devices IP changes and Internet IP address changes. Scanning methods are:&#xD;
 &#xD;
     Method 1: arp-scan. The arp-scan system utility is used to search for devices on the network using arp frames.&#xD;
@@ -19,7 +19,7 @@
   <Category>Security: Tools: Network:Management</Category>
   <WebUI>http://[IP]:[PORT:20211]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/nzzane/nzzane-unraid-repo/main/PiHole-Dot-DoH.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/pucherot/Pi.Alert/main/front/img/pialertLogoGray50.png</Icon>
+  <Icon>https://raw.githubusercontent.com/jokob-sk/NetAlertX/main/front/img/NetAlertX_logo.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
@@ -27,9 +27,9 @@
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="Config path" Target="/home/pi/pialert/config" Default="" Mode="rw" Description="Path to Config location" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pialert/config</Config>
+  <Config Name="Config path" Target="/home/pi/pialert/config" Default="" Mode="rw" Description="Path to Config location" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/netalertx/config</Config>
   <Config Name="Host Key 1" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">Pacific/Auckland</Config>
   <Config Name="Web Port" Target="20211" Default="20211" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">20211</Config>
-  <Config Name="Database path" Target="/home/pi/pialert/db" Default="" Mode="rw" Description="Path to Database location" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pialert/db</Config>
+  <Config Name="Database path" Target="/home/pi/pialert/db" Default="" Mode="rw" Description="Path to Database location" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/netalertx/db</Config>
   <Config Name="PiHole FTL db path" Target="/etc/pihole/pihole-FTL.db" Default="/mnt/user/appdata/pihole-dot-doh/pihole/pihole-FTL.db" Mode="rw" Description="Optional: Path to PiHole FTL DB" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/pihole-dot-doh/pihole/pihole-FTL.db</Config>
 </Container>
